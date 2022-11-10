@@ -1,0 +1,67 @@
+Chapter 1
+
+error - human mistakes
+defect - a bug in the system
+failure - system failure caused by the defect
+Person makes error -> creates defect (bug) -> causes failure
+
+
+defects get discovered by testing, then solved
+
+
+requirements -> design -> build -> product
+
+principles
+1. testing can show that defects are present but NOT that they're absent
+2. exhaustive testing is not possible -> better focus on priorities
+3. early testing -> testing should start asap and focus on predefined objectives. The earlier the defect is found, the cheaper it is to fix it
+4. Defect cluster -> if the bug is found in a part of the system, it might mean that there's more here
+5. Pesticide paradox -> repeating test might result in no new bugs FOUND, possible fix is changing parameters
+6. testing depends on the context -> stakes
+7. absence of errors is deceptive -> functionality > stability
+
+FUNDAMENTAL TEST PROCESS
+
+1. Planning and control
+	determine the risks - why and what
+	test approach - requirements and how
+	resources - humand and hw resources
+	exit criteria - when to stop testing
+
+2. Test analysis and design
+	what to test
+	how to test
+
+3. Test implementation and execution
+	take component
+	apply inputs
+	compare to expected results
+	if fails - debug and confirmation testing -> then regression to check if no new defects caused by changes
+
+4. Evaluating exit criteria
+	test execution against reqiurements
+
+5. Test closure activities
+	collect data from test
+	analaze data and numbers
+	archive tool for futher stuff
+
+Chapter 2. - Testing throughout the software development life cycle (SDLC)
+	Verification -> requirements (according to specification)
+	Validation -> user needs (does it provide a solution to the problem)
+
+Sequential models
+	linear flow of activities (serial), a bit long, hard to adapt
+
+	Waterfall (requirements -> analysis -> design -> coding -> testing -> acceptance)
+		easy to manage, well documented. if fugged at start, hard to fix later
+
+	V model - associates test levels with corresponding development phases, more early testing, less defects
+		easy to control, smol/medium sidze projects, hard to adjust, testing is constrained in time frames
+
+
+Incremental models
+	software features get updated until all functionality is implemented
+
+	Agile - iterative, flexible
+		Scrum
