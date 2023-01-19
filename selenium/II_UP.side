@@ -1,0 +1,324 @@
+{
+  "id": "c86ae422-684d-4d10-b1ff-0f1908aeec57",
+  "version": "2.0",
+  "name": "II_UP",
+  "url": "https://ii.up.krakow.pl",
+  "tests": [{
+    "id": "5a1eee1d-cd11-4531-8e25-1cf40bc16a5f",
+    "name": "iiup_search_navbar",
+    "commands": [{
+      "id": "89b9bd75-5f02-4321-96e4-a9caeb914eb3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55925432-0374-4943-bdea-ac2b80537263",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "351b4f2a-b6af-4091-a85c-eb4da21d694a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.two-col",
+      "targets": [
+        ["css=.two-col", "css:finder"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a64c9ac-db03-4a69-bbe0-9eb8e97f3815",
+      "comment": "",
+      "command": "click",
+      "target": "css=.two-col",
+      "targets": [
+        ["css=.two-col", "css:finder"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "982d85ae-f40e-4e9f-bc98-1134630c0737",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu-item-210 > a",
+      "targets": [
+        ["css=#menu-item-210 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Aktualności')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-210']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ii.up.krakow.pl/aktualnosci/')]", "xpath:href"],
+        ["xpath=//li/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e388d873-fd81-4c4e-b56d-443108c392b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(1) .news-header",
+      "targets": [
+        ["css=.col-md-4:nth-child(1) .news-header", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div/main/div/div/div/article/a/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'EGZAMIN INŻYNIERSKI 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3631ad18-1d85-4cf2-9278-8c2e6e6648d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_field",
+      "targets": [
+        ["id=search_field", "id"],
+        ["name=s", "name"],
+        ["css=#search_field", "css:finder"],
+        ["xpath=//input[@id='search_field']", "xpath:attributes"],
+        ["xpath=//div[@id='search_box']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "774fabd3-4f4c-463f-bfcc-da905ea13f4e",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_field",
+      "targets": [
+        ["id=search_field", "id"],
+        ["name=s", "name"],
+        ["css=#search_field", "css:finder"],
+        ["xpath=//input[@id='search_field']", "xpath:attributes"],
+        ["xpath=//div[@id='search_box']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "3bf96e4e-8800-49e8-8568-b3627374eeba",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search_field",
+      "targets": [
+        ["id=search_field", "id"],
+        ["name=s", "name"],
+        ["css=#search_field", "css:finder"],
+        ["xpath=//input[@id='search_field']", "xpath:attributes"],
+        ["xpath=//div[@id='search_box']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "48020e42-a2b5-48aa-a551-19d1d96c9183",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=test",
+      "targets": [
+        ["linkText=test", "linkText"],
+        ["css=.col-md-12:nth-child(1) .s-result-link", "css:finder"],
+        ["xpath=//a[contains(text(),'test')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div/main/div/div/div/header/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ii.up.krakow.pl/https-intranet-up-krakow-pl-rektor-ii-lists-kalendarz-calendar-aspx/test/')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfd68778-00be-4620-b9b9-bbe66b5203b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwbox-3135",
+      "targets": [
+        ["id=pwbox-3135", "id"],
+        ["name=post_password", "name"],
+        ["css=#pwbox-3135", "css:finder"],
+        ["xpath=//input[@id='pwbox-3135']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/main/div/article/div/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9379d07e-757a-4dba-bbdd-5cc7b296e8b6",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwbox-3135",
+      "targets": [
+        ["id=pwbox-3135", "id"],
+        ["name=post_password", "name"],
+        ["css=#pwbox-3135", "css:finder"],
+        ["xpath=//input[@id='pwbox-3135']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/main/div/article/div/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ca4ad09-25f8-40ee-9b49-7950ca27a562",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwbox-3135",
+      "targets": [
+        ["id=pwbox-3135", "id"],
+        ["name=post_password", "name"],
+        ["css=#pwbox-3135", "css:finder"],
+        ["xpath=//input[@id='pwbox-3135']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/main/div/article/div/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "haslo"
+    }, {
+      "id": "7e7b5d85-aa08-43b1-8d04-a4904518185c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=pwbox-3135",
+      "targets": [
+        ["id=pwbox-3135", "id"],
+        ["name=post_password", "name"],
+        ["css=#pwbox-3135", "css:finder"],
+        ["xpath=//input[@id='pwbox-3135']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/main/div/article/div/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a4b9e463-ff6f-4416-a71e-bb9827751655",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwbox-3135",
+      "targets": [
+        ["id=pwbox-3135", "id"],
+        ["name=post_password", "name"],
+        ["css=#pwbox-3135", "css:finder"],
+        ["xpath=//input[@id='pwbox-3135']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/main/div/article/div/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a15bf17-aa77-403c-a446-42dd30ccd134",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwbox-3135",
+      "targets": [
+        ["id=pwbox-3135", "id"],
+        ["name=post_password", "name"],
+        ["css=#pwbox-3135", "css:finder"],
+        ["xpath=//input[@id='pwbox-3135']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/main/div/article/div/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "c3a61cf1-8da3-4a0d-8ee5-4d2de0bde2f0",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=pwbox-3135",
+      "targets": [
+        ["id=pwbox-3135", "id"],
+        ["name=post_password", "name"],
+        ["css=#pwbox-3135", "css:finder"],
+        ["xpath=//input[@id='pwbox-3135']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/main/div/article/div/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8948627c-e000-49ce-a0e3-eb8a28342fe6",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwbox-3135",
+      "targets": [
+        ["id=pwbox-3135", "id"],
+        ["name=post_password", "name"],
+        ["css=#pwbox-3135", "css:finder"],
+        ["xpath=//input[@id='pwbox-3135']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/main/div/article/div/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d12c779a-d9d8-48c8-9bcd-f82d6f2b7951",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwbox-3135",
+      "targets": [
+        ["id=pwbox-3135", "id"],
+        ["name=post_password", "name"],
+        ["css=#pwbox-3135", "css:finder"],
+        ["xpath=//input[@id='pwbox-3135']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/main/div/article/div/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "iiup"
+    }, {
+      "id": "f7630421-c46f-4211-8d1f-9496caa09612",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=pwbox-3135",
+      "targets": [
+        ["id=pwbox-3135", "id"],
+        ["name=post_password", "name"],
+        ["css=#pwbox-3135", "css:finder"],
+        ["xpath=//input[@id='pwbox-3135']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/main/div/article/div/form/p[2]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9576d29b-6610-4c9d-ab29-33d4fe27d0d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-8",
+      "targets": [
+        ["css=.col-md-8", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05339b39-1eea-4bec-8f75-4dac01eac128",
+      "comment": "",
+      "command": "click",
+      "target": "id=archives-dropdown-4",
+      "targets": [
+        ["id=archives-dropdown-4", "id"],
+        ["name=archive-dropdown", "name"],
+        ["css=#archives-dropdown-4", "css:finder"],
+        ["xpath=//select[@id='archives-dropdown-4']", "xpath:attributes"],
+        ["xpath=//div[@id='archives-4']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3ca206b-c1dc-4523-939b-d1fcdc2fd21a",
+      "comment": "",
+      "command": "select",
+      "target": "id=archives-dropdown-4",
+      "targets": [],
+      "value": "label=marzec 2020"
+    }, {
+      "id": "32acc165-b633-4aaa-bac6-c68f11a7c805",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(25)",
+      "targets": [
+        ["css=option:nth-child(25)", "css:finder"],
+        ["xpath=//option[@value='https://ii.up.krakow.pl/2020/03/']", "xpath:attributes"],
+        ["xpath=//select[@id='archives-dropdown-4']/option[25]", "xpath:idRelative"],
+        ["xpath=//option[25]", "xpath:position"],
+        ["xpath=//option[contains(.,' marzec 2020 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3358a81c-83bc-483c-ad82-035ccc2f2732",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5a1eee1d-cd11-4531-8e25-1cf40bc16a5f"]
+  }],
+  "urls": ["https://ii.up.krakow.pl/"],
+  "plugins": []
+}
