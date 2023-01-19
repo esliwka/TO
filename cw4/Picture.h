@@ -30,6 +30,18 @@ public:
         this->children.remove(g);
         g->SetParent(nullptr);
     }
+
+    float getX() const {
+        return x;
+    }
+
+    float getY() const {
+        return x;
+    }
+
+    const std::list<Graphic *> &getChildren() const {
+        return children;
+    }
 };
 
 
